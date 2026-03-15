@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  background: #080b12;
+  color: #e2e8f0;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 4px; }
+
+input, textarea, button { font-family: 'IBM Plex Mono', monospace; }
+input::placeholder, textarea::placeholder { color: #334155; }
+button { cursor: pointer; transition: opacity 0.15s, transform 0.15s; }
+button:hover { opacity: 0.88; }
+button:active { transform: scale(0.97); }
+
+@keyframes blink    { 0%,100%{opacity:1} 50%{opacity:0.2} }
+@keyframes dot      { 0%{transform:translateY(0);opacity:0.4} 100%{transform:translateY(-6px);opacity:1} }
+@keyframes fadeIn   { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+@keyframes slideUp  { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+@keyframes glow     { 0%,100%{box-shadow:0 0 20px rgba(0,255,163,0.2)} 50%{box-shadow:0 0 40px rgba(0,255,163,0.5)} }
+@keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes shimmer  { 0%{background-position:200% center} 100%{background-position:-200% center} }
+
+.fade-in  { animation: fadeIn 0.3s ease forwards; }
+.slide-up { animation: slideUp 0.5s ease forwards; }

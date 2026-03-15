@@ -1,0 +1,17 @@
+{
+  "name": "pitchsense",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^5.1.0",
+    "@supabase/supabase-js": "^2.43.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}
